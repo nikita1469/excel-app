@@ -26,8 +26,6 @@ export class Excel {
 
     render() {
         this.$el.append(this.getRoot()) // Отрисовка DOM
-        console.log(this.$el)
-        
         this.components.forEach(component => component.init()) // Добавление событий через родительский класс
     }
 }

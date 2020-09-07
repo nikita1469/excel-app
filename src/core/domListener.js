@@ -22,7 +22,6 @@ export class DomListener {
 
             this[method] = this[method].bind(this) // Привязка контекста класса
             this.$root.on(listener, this[method]) // Обертка над AddEventListener
-            console.log(this.$root)
         })
     }
 
